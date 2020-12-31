@@ -51,9 +51,10 @@ function random_partition(values, start_index, end_index)
     @swap(values[random_index], values[end_index])
 
     #=
-    Let values lower than pivot at the left
-    and bigger values at the right.
-    Finally, put pivot in between those arrays.
+    Set lower values than the pivot on the left,
+    and higher values on the right.
+    Finally, put the pivot in between those arrays.
+
 
     Example:
 
