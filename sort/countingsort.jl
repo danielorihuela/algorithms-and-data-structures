@@ -1,9 +1,15 @@
-unsorted_array = [29, 1, 31, 4, 3, 2, 15, 10, 20]
+unsorted_array = [29, 1, 31, 4, 0, 3, 2, 15, 10, 20]
 
 function countingsort(values)
-    number_count = zeros(Int, maximum(values))
+    #=
+    In julia arrays start with index 1 so we need
+    to add 1 position to handle the 0.
+    The index 1 will represent number 0, index 2
+    will represent number 1, ...
+    =#
+    number_count = zeros(Int, maximum(values) + 1)
     for value in values
-        number_count[value] += 1
+        number_count[value + 1] += 1
     end
     cumulative_sum_number_count = cumsum(number_count)
 
@@ -35,8 +41,8 @@ function countingsort(values)
     =#
     sorted_array = zeros(Int, length(values))
     for value in reverse(values)
-        sorted_array[cumulative_sum_number_count[value]] = value
-        cumulative_sum_number_count[value] -= 1
+        sorted_array[cumulative_sum_number_count[value + 1]] = value
+        cumulative_sum_number_count[value + 1] -= 1
     end
 
     return sorted_array
