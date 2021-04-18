@@ -62,17 +62,17 @@
 
                           15 <- root
                          /  \
-       searching for -> 12  nil
+       searching for -> 12  24
                        / \
-                     nil 13
+                     nil 14
                          / \
-                        11 24
+                        13 nil
 
-       Were the left child of the current node has the
+       Where the left child of the current node has the
        key we are searching for, 12 in this case. Since
-       the sub-tree on the right side contains larges
+       the sub-tree on the right side contains larger
        values, we know that the successor of 12 must be
-       there. In fact, it must be the minimun (11).
+       there. In fact, it must be the minimun (13).
 
        In the event that the right sub-tree does not
        exist, the successor must be its parent, which
@@ -81,22 +81,22 @@
     (= key (:key (:left root))) (or (min-node-key (:right (:left root))) (:key root))
     #_(
        Similarly, if we find ourselves in the following
-       situation, searching for key = 13.
+       situation, searching for key = 14.
 
-                          15 (A)<- root
+                          16 (A)<- root
                          /  \
-                    (B) 12  nil
+                    (B) 12  24
                        / \
-                     nil 13 (C) <- searching for
+                     nil 14 (C) <- searching for
                          / \
-                        11 24
+                        13 15
 
        Where the right sub-tree of the left sub-tree
        of the current node has the key we are searching
-       for, 13 in this case. Due to the fact that, the
+       for, 14 in this case. Due to the fact that, the
        right sub-tree contains bigger elements, we know
-       that the successor of 13 must be inside on its right
-       subtree. In fact, it must be the minimun (24).
+       that the successor of 14 must be inside on its right
+       subtree. In fact, it must be the minimun (15).
 
        Otherwise, if the right sub-tree does not exist,
        we know that the successor is node A.
