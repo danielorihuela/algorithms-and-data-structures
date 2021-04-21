@@ -52,75 +52,18 @@
     (< key (:key root)) (assoc root :left (remove-node (:left root) key))
     (> key (:key root)) (assoc root :right (remove-node (:right root) key))))
 
+(defn inorder-tree-walk [root]
+  (flatten (cond
+             (= root nil) []
+             :else (concat[(inorder-tree-walk (:left root))]
+                          [(:key root)]
+                          [(inorder-tree-walk (:right root))]))))
+
 (defn node-successor [root, key]
-  (cond
-    (= root nil) nil
-
-    #_(
-       If we find ourselves in the following situation,
-       searching for key = 12.
-
-                          15 <- root
-                         /  \
-       searching for -> 12  24
-                       / \
-                     nil 14
-                         / \
-                        13 nil
-
-       Where the left child of the current node has the
-       key we are searching for, 12 in this case. Since
-       the sub-tree on the right side contains larger
-       values, we know that the successor of 12 must be
-       there. In fact, it must be the minimun (13).
-
-       In the event that the right sub-tree does not
-       exist, the successor must be its parent, which
-       is always bigger.
-       )
-    (= key (:key (:left root))) (or (min-node-key (:right (:left root))) (:key root))
-    #_(
-       Similarly, if we find ourselves in the following
-       situation, searching for key = 14.
-
-                          16 (A)<- root
-                         /  \
-                    (B) 12  24
-                       / \
-                     nil 14 (C) <- searching for
-                         / \
-                        13 15
-
-       Where the right sub-tree of the left sub-tree
-       of the current node has the key we are searching
-       for, 14 in this case. Due to the fact that, the
-       right sub-tree contains bigger elements, we know
-       that the successor of 14 must be inside on its right
-       subtree. In fact, it must be the minimun (15).
-
-       Otherwise, if the right sub-tree does not exist,
-       we know that the successor is node A.
-       To understand this, let's take a look at the
-       example. Parent of node C (B) has a lower value
-       (since C it to the right of B).
-       Therefore, we need to go to node A (B's parent),
-       which is always bigger since B ist o the left of
-       A. We reach A > C, because C is located in the
-       right sub-tree of A.
-       )
-    (= key (:key (:right (:left root)))) (or (min-node-key (:right (:right (:left root)))) (:key root))
-    (< key (:key root)) (node-successor (:left root) key)
-    (> key (:key root)) (node-successor (:right root) key)
-    (= key (:key root)) (min-node-key (:right root))))
-
-(defn inorder-tree-walk
-  ([root] (inorder-tree-walk root (max-node-key root)))
-  ([root, max-value] (cond
-                      (= (:key root) max-value) (str (:key root))
-                      (not= root nil) (str (inorder-tree-walk (:left root) max-value)
-                                           (:key root) ", "
-                                           (inorder-tree-walk (:right root) max-value)))))
-
+  (let [values (apply vector (inorder-tree-walk root))]
+    (->> key
+         (.indexOf values)
+         (#(get values (+ % 1))))))
 
 ;;;; I am still learning clojure
 ;;;; To make my life easier I will simulate tests with
@@ -138,7 +81,7 @@
     (not= (type keys) (type [])) (->BinaryTreeNode nil keys nil)
     :else (->BinaryTreeNode (build-tree (keys 0)) (keys 1) (build-tree (keys 2)))))
 
-(def tree (build-tree [[2 5 9] 12 [[13 15 17] 18 [nil 19 22]]]))
+(def tree (build-tree [[3 5 9] 12 [[13 15 17] 18 [nil 19 22]]]))
 
 ;; insert node tests
 (def tree-with-node-14 (build-tree [[2 5 9] 12 [[[nil 13 14] 15 17] 18 [nil 19 22]]]))
@@ -174,4 +117,15 @@
 (print-test-title "remove" 19)
 (print-result (= tree-without-19 (remove-node tree 19)))
 
-(println "Inorder tree walk of \"tree\":" (inorder-tree-walk tree))
+
+
+(println "\nNODE SUCCESSOT TESTS")
+(def tree2 (build-tree [[5 10 [12 13 [14 15 16]]] 23 [24 25 26]]))
+(println "Inorder tree walk of \"tree\":" (inorder-tree-walk tree2))
+(println "node-successor of 25 should return 26")
+(print-result (= 26 (node-successor tree2 25)))
+(println "node-successor of 26 should return nil")
+(print-result (= nil (node-successor tree2 26)))
+(println "node-successor of 16 should return 23")
+(print-result (= 23 (node-successor tree2 16)))
+
