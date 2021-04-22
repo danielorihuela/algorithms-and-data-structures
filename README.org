@@ -1,4 +1,4 @@
-| Algorithm type        | Book                                      | Algorithm      |
+| Algorithm type        | Origin                                    | Algorithm      |
 |-----------------------+-------------------------------------------+----------------|
 | sort                  | CLRS                                      | mergesort      |
 | sort                  | CLRS                                      | heapsort       |
