@@ -1,9 +1,9 @@
-| Algorithm type        | Origin                                    | Algorithm      |
-|-----------------------+-------------------------------------------+----------------|
-| sort                  | CLRS                                      | mergesort      |
-| sort                  | CLRS                                      | heapsort       |
-| sort                  | CLRS                                      | quicksort      |
-| sort                  | CLRS                                      | countingsort   |
-| sort                  | CLRS                                      | radixsor       |
-| data structure (tree) | CLRS                                      | binary tree    |
-| data structure (tree) | [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]] | red black tree |
+| Type           | Subtype | Name           | Implementation source                     |
+|----------------+---------+----------------+-------------------------------------------|
+| Algorithm      | Sort    | Countingsort   | CLRS                                      |
+| Algorithm      | Sort    | Heapsort       | CLRS                                      |
+| Algorithm      | Sort    | Mergesort      | CLRS                                      |
+| Algorithm      | Sort    | Quicksort      | CLRS                                      |
+| Algorithm      | Sort    | Radixsort      | CLRS                                      |
+| Data Structure | Tree    | Binary tree    | CLRS                                      |
+| Data Structure | Tree    | Red black tree | [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]] |
