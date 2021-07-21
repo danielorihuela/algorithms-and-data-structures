@@ -1,5 +1,3 @@
-unsorted_array = [29, 1, 31, 4, 3, 2, 15, 10, 20]
-
 #=
 I wanted a function to swap values. However,
 for some reason it did not correctly change
@@ -87,4 +85,5 @@ function random_partition(values, start_index, end_index)
     return pivot_new_index
 end
 
+unsorted_array = [29, 1, 31, 4, 3, 2, 15, 10, 20]
 print(quicksort(unsorted_array))

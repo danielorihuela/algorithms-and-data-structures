@@ -1,5 +1,3 @@
-unsorted_array = [123, 2, 25, 8293, 790, 50]
-
 #=
 Slighly modified counting sort to use with
 radix sort.
@@ -37,4 +35,5 @@ function radixsort(values)
     return sorted_array
 end
 
+unsorted_array = [123, 2, 25, 8293, 790, 50]
 print(radixsort(unsorted_array))

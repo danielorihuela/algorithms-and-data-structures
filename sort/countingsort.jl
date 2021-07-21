@@ -1,5 +1,3 @@
-unsorted_array = [29, 1, 31, 4, 0, 3, 2, 15, 10, 20]
-
 function countingsort(values)
     #=
     In julia arrays start with index 1 so we need
@@ -48,4 +46,5 @@ function countingsort(values)
     return sorted_array
 end
 
+unsorted_array = [29, 1, 31, 4, 0, 3, 2, 15, 10, 20]
 print(countingsort(unsorted_array))

@@ -1,5 +1,3 @@
-unsorted_array = [29, 1, 31, 4, 3, 2, 15, 10, 20]
-
 function heapsort(values)
     heap = build_max_heap(values)
     heap_size = length(heap)
@@ -69,4 +67,5 @@ function max_heapify(values, length, i)
     end
 end
 
+unsorted_array = [29, 1, 31, 4, 3, 2, 15, 10, 20]
 print(heapsort(unsorted_array))

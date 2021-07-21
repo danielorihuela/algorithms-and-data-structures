@@ -1,5 +1,3 @@
-unsorted_array = [29, 1, 31, 4, 3, 2, 15, 10, 20]
-
 INFINITE = 1/0
 
 function mergesort(values)
@@ -77,4 +75,5 @@ function merge(values, start_index, middle_index, end_index)
     end
 end
 
+unsorted_array = [29, 1, 31, 4, 3, 2, 15, 10, 20]
 print(mergesort(unsorted_array))
