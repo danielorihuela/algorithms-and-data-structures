@@ -7,3 +7,4 @@
 | Algorithm      | Sort    | Radixsort      | CLRS                                      |
 | Data Structure | Tree    | Binary tree    | CLRS                                      |
 | Data Structure | Tree    | Red black tree | [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]] |
+| Data Structure | Tree    | B-tree         | CLRS                                      |
