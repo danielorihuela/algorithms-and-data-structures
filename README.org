@@ -1,14 +1,15 @@
-| Type           | Subtype      | Name                                 | Implementation source                            |
-|----------------+--------------+--------------------------------------+--------------------------------------------------|
-| Algorithm      | Graph        | Breadth-first search                 | CLRS                                             |
-| Algorithm      | Graph        | Depth-first search                   | CLRS                                             |
-| Algorithm      | Sort         | Countingsort                         | CLRS                                             |
-| Algorithm      | Sort         | Heapsort                             | CLRS                                             |
-| Algorithm      | Sort         | Mergesort                            | CLRS                                             |
-| Algorithm      | Sort         | Quicksort                            | CLRS                                             |
-| Algorithm      | Sort         | Radixsort                            | CLRS                                             |
-| Data Structure | Disjoint Set | Linked-list basic union              | CLRS                                             |
-| Data Structure | Disjoint Set | Linked-list weighted-union heuristic | CLRS                                             |
-| Data Structure | Tree         | Binary tree                          | CLRS                                             |
-| Data Structure | Tree         | B-tree                               | CLRS                                             |
-| Data Structure | Tree         | Red black tree                       | CLRS & [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]] |
+| Type           | Subtype      | Name                                                      | Implementation source                            |
+|----------------+--------------+-----------------------------------------------------------+--------------------------------------------------|
+| Algorithm      | Graph        | Breadth-first search                                      | CLRS                                             |
+| Algorithm      | Graph        | Depth-first search                                        | CLRS                                             |
+| Algorithm      | Sort         | Countingsort                                              | CLRS                                             |
+| Algorithm      | Sort         | Heapsort                                                  | CLRS                                             |
+| Algorithm      | Sort         | Mergesort                                                 | CLRS                                             |
+| Algorithm      | Sort         | Quicksort                                                 | CLRS                                             |
+| Algorithm      | Sort         | Radixsort                                                 | CLRS                                             |
+| Data Structure | Disjoint Set | Forest with union by rank and path compression heuristics | CLRS                                             |
+| Data Structure | Disjoint Set | Linked-list basic union                                   | CLRS                                             |
+| Data Structure | Disjoint Set | Linked-list weighted-union heuristic                      | CLRS                                             |
+| Data Structure | Tree         | Binary tree                                               | CLRS                                             |
+| Data Structure | Tree         | B-tree                                                    | CLRS                                             |
+| Data Structure | Tree         | Red black tree                                            | CLRS & [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]] |
