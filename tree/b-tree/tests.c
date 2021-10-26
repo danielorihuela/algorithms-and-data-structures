@@ -1,10 +1,10 @@
-// Execute with "gcc tests.c b_tree.c -o out -lm && ./out"
+// Execute with "gcc tests.c b-tree.c -o out -lm && ./out"
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
 
-#include "b_tree.h"
+#include "b-tree.h"
 
 int log_base(int base, int value);
 int sorted(int* values, int length);

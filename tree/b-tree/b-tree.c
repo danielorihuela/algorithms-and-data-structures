@@ -3,7 +3,7 @@
 #include <time.h>
 #include <math.h>
 
-#include "b_tree.h"
+#include "b-tree.h"
 
 
 // ------------------------ CREATE B TREE ------------------------
