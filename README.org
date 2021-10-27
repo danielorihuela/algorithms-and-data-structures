@@ -4,6 +4,7 @@
 | Algorithm      | Graph        | Depth-first search                                        | CLRS                                             |
 | Algorithm      | Graph        | Minimum Spanning Tree Kruskal                             | CLRS                                             |
 | Algorithm      | Graph        | Minimum Spanning Tree Prim                                | CLRS                                             |
+| Algorithm      | Graph        | Single Source Shortest Path Bellman Ford                  | CLRS                                             |
 | Algorithm      | Sort         | Countingsort                                              | CLRS                                             |
 | Algorithm      | Sort         | Heapsort                                                  | CLRS                                             |
 | Algorithm      | Sort         | Mergesort                                                 | CLRS                                             |
