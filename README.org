@@ -6,6 +6,7 @@
 | Algorithm      | Graph        | Minimum Spanning Tree Prim                                | CLRS                                             |
 | Algorithm      | Graph        | Single Source Shortest Path Bellman Ford                  | CLRS                                             |
 | Algorithm      | Graph        | Single Source Shortest Path Dag                           | CLRS                                             |
+| Algorithm      | Graph        | Single Source Shortest Path Dijkstra                      | CLRS                                             |
 | Algorithm      | Graph/Sort   | Topological sort                                          | CLRS                                             |
 | Algorithm      | Sort         | Countingsort                                              | CLRS                                             |
 | Algorithm      | Sort         | Heapsort                                                  | CLRS                                             |
