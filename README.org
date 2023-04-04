@@ -8,11 +8,12 @@
 | Algorithm      | Graph        | Single Source Shortest Path Dag                           | CLRS                                             |
 | Algorithm      | Graph        | Single Source Shortest Path Dijkstra                      | CLRS                                             |
 | Algorithm      | Graph/Sort   | Topological sort                                          | CLRS                                             |
-| Algorithm      | Sort         | Countingsort                                              | CLRS                                             |
+| Algorithm      | Sort         | Bucket sort                                               | CLRS                                             |
+| Algorithm      | Sort         | Counting sort                                             | CLRS                                             |
 | Algorithm      | Sort         | Heapsort                                                  | CLRS                                             |
-| Algorithm      | Sort         | Mergesort                                                 | CLRS                                             |
+| Algorithm      | Sort         | Merge sort                                                | CLRS                                             |
 | Algorithm      | Sort         | Quicksort                                                 | CLRS                                             |
-| Algorithm      | Sort         | Radixsort                                                 | CLRS                                             |
+| Algorithm      | Sort         | Radix sort                                                | CLRS                                             |
 | Data Structure | Disjoint Set | Forest with union by rank and path compression heuristics | CLRS                                             |
 | Data Structure | Disjoint Set | Linked-list basic union                                   | CLRS                                             |
 | Data Structure | Disjoint Set | Linked-list weighted-union heuristic                      | CLRS                                             |
