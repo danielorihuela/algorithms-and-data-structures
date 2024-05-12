@@ -21,3 +21,4 @@
 | Data Structure | Tree         | B-tree                                                    | CLRS                                             |
 | Data Structure | Tree         | Red black tree                                            | CLRS & [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]] |
 | Data Structure | List         | Linked-List                                               | None                                             |
+| Data Structure | List         | Doubly-Linked-List                                        | None                                             |
