@@ -1,24 +1,25 @@
-| Type           | Subtype      | Name                                                      | Implementation source                            |
-|----------------+--------------+-----------------------------------------------------------+--------------------------------------------------|
-| Algorithm      | Graph        | Breadth-first search                                      | CLRS                                             |
-| Algorithm      | Graph        | Depth-first search                                        | CLRS                                             |
-| Algorithm      | Graph        | Minimum Spanning Tree Kruskal                             | CLRS                                             |
-| Algorithm      | Graph        | Minimum Spanning Tree Prim                                | CLRS                                             |
-| Algorithm      | Graph        | Single Source Shortest Path Bellman Ford                  | CLRS                                             |
-| Algorithm      | Graph        | Single Source Shortest Path Dag                           | CLRS                                             |
-| Algorithm      | Graph        | Single Source Shortest Path Dijkstra                      | CLRS                                             |
-| Algorithm      | Graph/Sort   | Topological sort                                          | CLRS                                             |
-| Algorithm      | Sort         | Bucket sort                                               | CLRS                                             |
-| Algorithm      | Sort         | Counting sort                                             | CLRS                                             |
-| Algorithm      | Sort         | Heapsort                                                  | CLRS                                             |
-| Algorithm      | Sort         | Merge sort                                                | CLRS                                             |
-| Algorithm      | Sort         | Quicksort                                                 | CLRS                                             |
-| Algorithm      | Sort         | Radix sort                                                | CLRS                                             |
-| Data Structure | Disjoint Set | Forest with union by rank and path compression heuristics | CLRS                                             |
-| Data Structure | Disjoint Set | Linked-list basic union                                   | CLRS                                             |
-| Data Structure | Disjoint Set | Linked-list weighted-union heuristic                      | CLRS                                             |
-| Data Structure | Tree         | Binary tree                                               | CLRS                                             |
-| Data Structure | Tree         | B-tree                                                    | CLRS                                             |
-| Data Structure | Tree         | Red black tree                                            | CLRS & [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]] |
-| Data Structure | List         | Linked-List                                               | None                                             |
-| Data Structure | List         | Doubly-Linked-List                                        | None                                             |
+| Type           | Subtype      | Name                                                      | Implementation source                                     |
+|----------------+--------------+-----------------------------------------------------------+-----------------------------------------------------------|
+| Algorithm      | Graph        | Breadth-first search                                      | CLRS                                                      |
+| Algorithm      | Graph        | Depth-first search                                        | CLRS                                                      |
+| Algorithm      | Graph        | Minimum Spanning Tree Kruskal                             | CLRS                                                      |
+| Algorithm      | Graph        | Minimum Spanning Tree Prim                                | CLRS                                                      |
+| Algorithm      | Graph        | Single Source Shortest Path Bellman Ford                  | CLRS                                                      |
+| Algorithm      | Graph        | Single Source Shortest Path Dag                           | CLRS                                                      |
+| Algorithm      | Graph        | Single Source Shortest Path Dijkstra                      | CLRS                                                      |
+| Algorithm      | Graph/Sort   | Topological sort                                          | CLRS                                                      |
+| Algorithm      | Sort         | Bucket sort                                               | CLRS                                                      |
+| Algorithm      | Sort         | Counting sort                                             | CLRS                                                      |
+| Algorithm      | Sort         | Heapsort                                                  | CLRS                                                      |
+| Algorithm      | Sort         | Merge sort                                                | CLRS                                                      |
+| Algorithm      | Sort         | Quicksort                                                 | CLRS                                                      |
+| Algorithm      | Sort         | Radix sort                                                | CLRS                                                      |
+| Data Structure | Disjoint Set | Forest with union by rank and path compression heuristics | CLRS                                                      |
+| Data Structure | Disjoint Set | Linked-list basic union                                   | CLRS                                                      |
+| Data Structure | Disjoint Set | Linked-list weighted-union heuristic                      | CLRS                                                      |
+| Data Structure | Tree         | Binary tree                                               | CLRS                                                      |
+| Data Structure | Tree         | B-tree                                                    | CLRS                                                      |
+| Data Structure | Tree         | Red black tree                                            | CLRS & [[http://matt.might.net/papers/germane2014deletion.pdf][Deletion: The curse of the red-black tree]]          |
+| Data Structure | List         | Linked-List                                               | None                                                      |
+| Data Structure | List         | Doubly-Linked-List                                        | None                                                      |
+| Data Structure | List         | Skip List                                                 | [[https://15721.courses.cs.cmu.edu/spring2018/papers/08-oltpindexes1/pugh-skiplists-cacm1990.pdf][Skip Lists: A Probabilistic Alternative to Balanced Trees]] |
